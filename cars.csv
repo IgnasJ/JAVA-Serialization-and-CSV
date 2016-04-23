@@ -1,7 +1,8 @@
-id;brand;model;year;seatsNumber
-1;"Toyota; ""2""";"""Avensis""";2016;4
-2;"Opel";"Ascona";1995;5
-3;"Party";"Car";2000;8
-4;"Power ""Awesome"" Car";"A;B;C";2001;2
-5;"Toyota; """"2""""";"Avensis";19;4
-6;";;;";",,,,,,";9999;5
+id,brand,model,year,seatsNumber
+1,"Toyota, ""2""","""Avensis""",2016,4
+2,Opel,Ascona,1995,5
+3,Party,Car,2000,8
+4,"Power ""Awesome"" Car",A;B;C,2001,2
+5,"Toyota; """"2""""",Avensis,19,4
+6,",,;,",",,,,,,",9999,5
+7,""""""""""""",'"",""","""",0,0

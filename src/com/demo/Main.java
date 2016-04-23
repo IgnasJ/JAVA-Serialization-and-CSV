@@ -14,12 +14,12 @@ public class Main {
         ArrayList<Car> cars = new ArrayList<>();
         ArrayList<Bike> bikes = new ArrayList<>();
 
-        Car car1 = new Car("Toyota; \"2\"", "\"Avensis\"", 2016, 4);
+        Car car1 = new Car("Toyota, \"2\"", "\"Avensis\"", 2016, 4);
         Car car2 = new Car("Opel", "Ascona", 1995);
         Car car3 = new Car("Party", "Car", 2000, 8);
         Car car4 = new Car("Power \"Awesome\" Car", "A;B;C", 2001,2);
         Car car5 = new Car("Toyota; \"\"2\"\"", "Avensis", 19, 4);
-        Car car6 = new Car(";;;", ",,,,,,", 9999);
+        Car car6 = new Car(",,;,", ",,,,,,", 9999);
 
         Bike bike1 = new Bike("BMX", "360", 2005);
         Bike bike2 = new Bike("Dviratis", "Ereliukas", 1990);

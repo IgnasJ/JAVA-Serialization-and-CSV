@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * Created by Ignas on 2016-04-21.
  */
 public class CsvFileRead {
-    private static final String COMMA_SEPARATOR = ",";
+    private static final String SEPARATOR = ",";
 
     private static final int ID =0;
     private static final int MODEL = 1;
@@ -29,10 +29,10 @@ public class CsvFileRead {
                 BufferedReader fileReader = new BufferedReader(new FileReader(fileName));
                 String header = fileReader.readLine();
                 while ((line = fileReader.readLine()) != null) {
-                    String[]tokens = line.split(";(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+                    String[]tokens = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
                     removeFirstAndLastQuote(tokens);
                     if (tokens.length > 0){
-                        if(header.equals("id;brand;model;year;seatsNumber")) {
+                        if(header.equals("id,brand,model,year,seatsNumber")) {
                             tokens[MODEL] = removeExtraQuotes(tokens[MODEL]);
                             tokens[BRAND] = removeExtraQuotes(tokens[BRAND]);
                             Car car = new Car(Integer.parseInt(tokens[ID]), tokens[MODEL], tokens[BRAND], Integer.parseInt(tokens[YEAR]), Integer.parseInt(tokens[SEATS_NUMBER]));

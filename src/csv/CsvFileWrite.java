@@ -11,16 +11,16 @@ import java.util.ArrayList;
  */
 public class CsvFileWrite {
 
-    private static final String SEPARATOR = ";";
+    private static final String SEPARATOR = ",";
     private static final String NEW_LINE_SEPARATOR = "\n";
 
     private String fileHeader;
 
     public void writeToCsvFile(String fileName, ArrayList<? extends Vehicle> objectsList){
         if (objectsList.get(0) instanceof Car){
-            fileHeader = "id;brand;model;year;seatsNumber";
+            fileHeader = "id,brand,model,year,seatsNumber";
         }else {
-            fileHeader = "brand;model;year";
+            fileHeader = "brand,model,year";
         }
 
         FileWriter fileWriter;
